@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1315.0" style="-fx-background-color: #4F5F79;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.VoucherDetailSceneController">
+   <children>
+      <JFXButton focusTraversable="false" layoutX="23.0" layoutY="21.0" onAction="#handleBackButton" prefHeight="16.0" prefWidth="0.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../marketimages/white-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fx:id="voucherImageView" fitHeight="477.0" fitWidth="990.0" layoutX="200.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../marketimages/voucher-market.png" />
+         </image>
+      </ImageView>
+      <Text fill="#adadadd4" layoutX="429.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher Details">
+         <font>
+            <Font name="Overpass ExtraBold" size="69.0" />
+         </font>
+      </Text>
+      <Text fill="#fff4f4" layoutX="424.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher Details">
+         <font>
+            <Font name="Overpass ExtraBold" size="69.0" />
+         </font>
+      </Text>
+      <Label fx:id="codeNameLabel2" layoutX="319.0" layoutY="253.0" text="codeNameLabel" textFill="#b8b8b8dd">
+         <font>
+            <Font name="Overpass ExtraBold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="codeTypeLabel2" layoutX="307.0" layoutY="351.0" text="codeTypeLabel" textFill="#9c9c9cd1">
+         <font>
+            <Font name="Overpass ExtraBold" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="expiryDateLabel2" layoutX="290.0" layoutY="442.0" text="expiryDateLabel" textFill="#aeaeae">
+         <font>
+            <Font name="Overpass ExtraBold" size="37.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="descriptionVoucherTextArea" editable="false" focusColor="#fbefe1" layoutX="458.0" layoutY="507.0" prefHeight="154.0" prefWidth="376.0" unFocusColor="#fbefe1">
+         <font>
+            <Font name="Overpass ExtraBold" size="29.0" />
+         </font>
+      </JFXTextArea>
+      <Text fill="#aeaeae" layoutX="261.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font name="Overpass ExtraBold" size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="323.0" layoutY="565.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="#b7b7b7" layoutX="261.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher">
+         <font>
+            <Font name="Overpass ExtraBold" size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="259.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font name="Overpass ExtraBold" size="34.0" />
+         </font>
+      </Text>
+      <Label fx:id="codeNameLabel" layoutX="316.0" layoutY="252.0" text="codeNameLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="codeTypeLabel" layoutX="305.0" layoutY="350.0" text="codeTypeLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="expiryDateLabel" layoutX="288.0" layoutY="441.0" text="expiryDateLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="37.0" />
+         </font>
+      </Label>
+      <Text layoutX="259.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher">
+         <font>
+            <Font name="Overpass ExtraBold" size="34.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

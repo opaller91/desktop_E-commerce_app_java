@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.VoucherListSceneController">
+   <children>
+      <Label layoutX="579.0" layoutY="39.0" text="Vouchers">
+         <font>
+            <Font name="Overpass ExtraBold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="131.0" text="Codename:">
+         <font>
+            <Font name="Overpass Regular" size="24.0" />
+         </font></Label>
+      <Label fx:id="codenameLabel" layoutX="244.0" layoutY="181.0" text="codenameLabel">
+         <font>
+            <Font name="Overpass Regular" size="24.0" />
+         </font></Label>
+      <Label layoutX="724.0" layoutY="131.0" text="Percent:">
+         <font>
+            <Font name="Overpass Regular" size="24.0" />
+         </font></Label>
+      <Label fx:id="percentLabel" layoutX="723.0" layoutY="181.0" text="percentLabel">
+         <font>
+            <Font name="Overpass Regular" size="24.0" />
+         </font></Label>
+      <Label layoutX="985.0" layoutY="131.0" text="Expires:">
+         <font>
+            <Font name="Overpass Regular" size="24.0" />
+         </font></Label>
+      <Label fx:id="expiryDateLabel" layoutX="985.0" layoutY="181.0" text="expiryDateLabel">
+         <font>
+            <Font name="Overpass Regular" size="24.0" />
+         </font></Label>
+      <Label layoutX="468.0" layoutY="131.0" text="Type:">
+         <font>
+            <Font name="Overpass Regular" size="24.0" />
+         </font></Label>
+      <Label fx:id="voucherTypeLabel" layoutX="468.0" layoutY="181.0" text="voucherTypeLabel">
+         <font>
+            <Font name="Overpass Regular" size="24.0" />
+         </font></Label>
+      <TableView fx:id="voucherTableView" layoutX="343.0" layoutY="234.0" prefHeight="432.0" prefWidth="664.0" styleClass="report-table-view" stylesheets="@../../css/style.css" />
+      <JFXButton layoutX="588.0" layoutY="706.0" onAction="#handleAddVoucherButton" prefHeight="61.0" prefWidth="161.0" styleClass="home-button" stylesheets="@../../css/style.css" text="Add Voucher" textFill="WHITE">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </JFXButton>
+      <Button layoutX="31.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="54.0" prefWidth="39.0" style="-fx-background-color: transparenttransparent;" styleClass="transparent" stylesheets="@../../../java/ku/cs/css/style.css">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../userimages/black-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

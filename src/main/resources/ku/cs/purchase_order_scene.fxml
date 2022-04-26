@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="800.0" prefWidth="1315.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.PurchaseOrderController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="155.0" layoutY="113.0" prefHeight="100.0" prefWidth="1026.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0">
+         <children>
+            <ImageView fx:id="img1" fitHeight="78.0" fitWidth="76.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../marketimages/number1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb1" prefHeight="0.0" prefWidth="370.0" />
+            <ImageView fx:id="img2" fitHeight="78.0" fitWidth="76.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../marketimages/number2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb2" prefHeight="0.0" prefWidth="370.0" />
+            <ImageView fx:id="img3" fitHeight="78.0" fitWidth="76.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../marketimages/number3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <JFXButton fx:id="processBtn" alignment="CENTER" buttonType="RAISED" layoutX="541.0" layoutY="687.0" onAction="#startProcessOrderEffect" prefHeight="76.0" prefWidth="238.0" styleClass="button-purchase-order" stylesheets="@../../css/style.css" text="PROCESS ORDER">
+         <font>
+            <Font name="Overpass ExtraBold" size="23.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="text1" layoutX="115.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="231.19993591308594">
+         <font>
+            <Font name="Overpass Regular" size="23.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.16510720551013947" green="0.6491715312004089" blue="0.8105263113975525" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.652070164680481" green="0.4411695897579193" blue="0.9684210419654846" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="text2" layoutX="583.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="154.2639923095703">
+         <font>
+            <Font name="Overpass Regular" size="23.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.8219696680704752" endY="0.844696968793869" startX="0.3825757426745964">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.7699999809265137" blue="0.23333333432674408" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9263157844543457" green="0.16810916364192963" blue="0.16810916364192963" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="text3" layoutX="1016.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="176.66395568847656">
+         <font>
+            <Font name="Overpass Regular" size="23.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.8219696680704752" endY="0.844696968793869" startX="0.606060576709834" startY="0.23106062051021692">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4888888895511627" green="1.0" blue="0.6762962937355042" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.42222222685813904" green="0.9518518447875977" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Label fx:id="itemNameLabel" layoutX="537.0" layoutY="287.0" text="itemNameLabel" visible="false">
+         <font>
+            <Font name="Overpass SemiBold" size="29.0" />
+         </font>
+      </Label>
+      <Text fx:id="numberText" layoutX="537.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Item" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </Text>
+      <HBox alignment="TOP_CENTER" layoutX="20.0" layoutY="20.0" prefHeight="47.0" prefWidth="1315.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <JFXButton onAction="#handleBackButton" prefHeight="41.0" prefWidth="56.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../marketimages/black-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Pane prefHeight="100.0" prefWidth="494.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VALIDMALL" wrappingWidth="248.7611083984375">
+               <font>
+                  <Font name="BodoniFLF-Roman" size="43.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="100.0" prefWidth="542.0">
+               <children>
+                  <Label fx:id="usernameLabel" layoutX="303.0" layoutY="11.0" prefHeight="26.0" prefWidth="165.0" text="usernameLabel">
+                     <font>
+                        <Font name="Overpass Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="userImageView" fitHeight="40.0" fitWidth="40.0" layoutX="467.0" layoutY="3.0" pickOnBounds="true" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Text fx:id="addressText" layoutX="537.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="addressTextField" focusTraversable="false" layoutX="711.0" layoutY="377.0" prefHeight="38.0" prefWidth="450.0" promptText="Address" styleClass="text-field-purchase-order" stylesheets="@../../css/style.css" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </TextField>
+      <Text fx:id="promoText" layoutX="537.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promotional code" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="voucherTextField" focusTraversable="false" layoutX="712.0" layoutY="424.0" prefHeight="43.0" prefWidth="450.0" promptText="Enter a promotional code" styleClass="text-field-purchase-order" stylesheets="@../../css/style.css" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </TextField>
+      <Text fx:id="paymentText" layoutX="537.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment method" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </Text>
+      <JFXRadioButton fx:id="cashRadioButton" focusTraversable="false" layoutX="586.0" layoutY="521.0" onAction="#choosePaymentCash" text="Pay Later (Cash)" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.34058478474617004" green="0.8842105269432068" blue="0.6123976707458496" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color />
+         </unSelectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="promptPayRadioButton" focusTraversable="false" layoutX="821.0" layoutY="519.0" onAction="#choosePaymentPromptPay" text="PromptPay" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <selectedColor>
+            <Color red="0.9506173133850098" green="0.7037037014961243" blue="1.0" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color />
+         </unSelectedColor>
+      </JFXRadioButton>
+      <Label fx:id="paymentMethodLabel" layoutX="606.0" layoutY="573.0" text="paymentMethodLabel" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemWarningLabel" layoutX="989.0" layoutY="340.0" text="itemWarningLabel" visible="false">
+         <font>
+            <Font name="Overpass SemiBold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="promptPayTextField" focusTraversable="false" layoutX="808.0" layoutY="563.0" prefHeight="43.0" prefWidth="337.0" promptText="PromptPay" style="-fx-border-color: #FF00C8;" styleClass="text-field-prompt-pay" stylesheets="@../../css/style.css" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="confrimBtn" alignment="CENTER" buttonType="RAISED" layoutX="541.0" layoutY="687.0" onAction="#handleConfirmButton" prefHeight="76.0" prefWidth="238.0" styleClass="button-purchase-order" stylesheets="@../../css/style.css" text="CONFIRM" visible="false">
+         <font>
+            <Font name="Overpass ExtraBold" size="23.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="numberOfItemTextField" focusTraversable="false" layoutX="712.0" layoutY="329.0" prefHeight="38.0" prefWidth="450.0" promptText="Number of Item" styleClass="text-field-purchase-order" stylesheets="@../../css/style.css" visible="false">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="itemImageView" fitHeight="360.0" fitWidth="258.0" focusTraversable="true" layoutX="229.0" layoutY="284.0" pickOnBounds="true" visible="false" />
+      <Separator layoutX="10.0" layoutY="57.0" opacity="0.6" prefHeight="0.0" prefWidth="1298.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+   </children>
+</AnchorPane>

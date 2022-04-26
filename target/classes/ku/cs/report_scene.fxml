@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="800.0" prefWidth="1315.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.ReportSceneController">
+   <children>
+      <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="17.0" prefHeight="47.0" prefWidth="1315.0">
+         <children>
+            <JFXButton onAction="#handleBackButton" prefHeight="41.0" prefWidth="56.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../marketimages/white-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Pane prefHeight="47.0" prefWidth="515.0" />
+            <Text fill="#f7f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="VALIDMALL" wrappingWidth="243.4277946949005">
+               <font>
+                  <Font name="BodoniFLF-Roman" size="43.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="100.0" prefWidth="542.0">
+               <children>
+                  <Label fx:id="usernameLabel" layoutX="303.0" layoutY="11.0" prefHeight="26.0" prefWidth="165.0" text="usernameLabel" textFill="WHITE">
+                     <font>
+                        <Font name="Overpass Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="userImageView" fitHeight="40.0" fitWidth="40.0" layoutX="467.0" layoutY="3.0" pickOnBounds="true" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Separator layoutX="2.0" layoutY="74.0" opacity="0.8" prefHeight="11.0" prefWidth="1319.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#616161" height="485.0" layoutX="278.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" width="898.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="507.0" layoutX="145.0" layoutY="188.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1006.0">
+         <fill>
+            <LinearGradient endX="0.6818181962677927" endY="1.0" startX="0.3181818263097243">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5199999809265137" green="0.5199999809265137" blue="0.5199999809265137" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="reportNameLabel1" layoutX="208.0" layoutY="143.0" text="reportNameLabel" textFill="#fffffffa">
+         <font>
+            <Font name="Overpass ExtraBold" size="70.0" />
+         </font>
+      </Label>
+      <Label fx:id="reportNameLabel2" layoutX="205.0" layoutY="142.0" styleClass="text-color-report" stylesheets="@../../css/style.css" text="reportNameLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="70.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4696969696969697" endY="1.0" startX="0.3181818263097243" startY="0.05681818181818182">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9200000166893005" green="0.9710344672203064" blue="1.0" opacity="0.9800000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9800000190734863" green="0.9401072263717651" blue="0.8917999863624573" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label layoutX="243.0" layoutY="265.0" text="NAME" textFill="WHITE">
+         <font>
+            <Font name="Overpass Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="265.0" styleClass="text-color-report" stylesheets="@../../css/style.css" text="NAME">
+         <font>
+            <Font name="Overpass Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="objectNameLabel2" layoutX="556.0" layoutY="265.0" text="objectNameLabel" textFill="WHITE">
+         <font>
+            <Font name="Overpass ExtraBold" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="objectNameLabel1" layoutX="554.0" layoutY="263.0" styleClass="text-color-report" stylesheets="@../../css/style.css" text="objectNameLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="47.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4696969696969697" endY="1.0" startX="0.3181818263097243" startY="0.05681818181818182">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9200000166893005" green="0.9710344672203064" blue="1.0" opacity="0.9800000190734863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9800000190734863" green="0.9401072263717651" blue="0.8917999863624573" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="239.0" layoutY="359.0" text="DESCRIPTION" textFill="#faf8f8">
+         <font>
+            <Font name="Overpass Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="359.0" styleClass="text-color-report" stylesheets="@../../css/style.css" text="DESCRIPTION">
+         <font>
+            <Font name="Overpass Bold" size="47.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="objectDescriptionTextArea" editable="false" focusColor="#c9c9c9" layoutX="555.0" layoutY="360.0" prefHeight="125.0" prefWidth="474.0" unFocusColor="#c9c9c9">
+         <font>
+            <Font name="Overpass SemiBold" size="30.0" />
+         </font>
+      </JFXTextArea>
+      <Label layoutX="239.0" layoutY="504.0" text="REASON" textFill="WHITE">
+         <font>
+            <Font name="Overpass Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="503.0" styleClass="text-color-report" stylesheets="@../../css/style.css" text="REASON">
+         <font>
+            <Font name="Overpass Bold" size="47.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="reasonTextArea" focusTraversable="false" layoutX="555.0" layoutY="504.0" prefHeight="126.0" prefWidth="474.0" promptText="Enter Reason">
+         <font>
+            <Font name="Overpass SemiBold" size="30.0" />
+         </font>
+      </TextArea>
+      <JFXButton buttonType="RAISED" layoutX="1095.0" layoutY="710.0" onAction="#handleAddReport" prefHeight="75.0" prefWidth="184.0" styleClass="button-report-scene" stylesheets="@../../css/style.css" text="REPORT" textFill="WHITE">
+         <font>
+            <Font name="Overpass ExtraBold" size="31.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

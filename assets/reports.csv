@@ -1,0 +1,10 @@
+reportType,reportID,reporterUsername,reportedObjectID,reason,isDone
+ReviewReport,2,potty,1,bad,false
+ItemReport,1,namkhing,5,test 1,true
+ItemReport,3,opaller,1,test,true
+ItemReport,4,opaller,1,test,true
+ItemReport,5,opaller,2,test,true
+ReviewReport,6,namkhing,3,คุณโอปอล์เล่อร์ตอแหลครับ ผมซื้อมาร้านนี้ของแท้ครับ\[newline]ช่วยตรวจสอบด้วยครับ แอดมินสุดหล่อ,true
+ItemReport,7,ppinip,3,ของปลอมแน่เชื่อเจ้โอปอลเล่อร์ค่าาา แหมหามาขายเนาะ,true
+ItemReport,8,ppinip,5,ซื้อมาแล้วกูไม่ฉลาดขึ้นเลย,true
+ItemReport,9,namkhing,8,แพงมากเลยค่ะ,false

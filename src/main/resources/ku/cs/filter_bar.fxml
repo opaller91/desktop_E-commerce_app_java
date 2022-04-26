@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="hamburger" prefHeight="800.0" prefWidth="300.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.market.controllers.FilterBarController">
+   <children>
+      <Text fill="#faf8f8" layoutX="75.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILTER BY">
+         <font>
+            <Font name="Overpass ExtraBold" size="28.0" />
+         </font>
+      </Text>
+      <JFXCheckBox fx:id="electronicsCheckBox" checkedColor="#ffcb91" layoutX="72.0" layoutY="139.0" text="Electronics" textFill="#f2eded" unCheckedColor="#fffafa">
+         <font>
+            <Font name="Overpass Regular" size="20.0" />
+         </font>
+      </JFXCheckBox>
+      <Text fill="#faf6f6" layoutX="35.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE">
+         <font>
+            <Font name="Overpass SemiBold" size="23.0" />
+         </font>
+      </Text>
+      <JFXCheckBox fx:id="clothingCheckBox" checkedColor="#ffefa1" layoutX="72.0" layoutY="189.0" text="Clothing" textFill="#f2eded" unCheckedColor="WHITE">
+         <font>
+            <Font name="Overpass Regular" size="20.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="utensilsCheckBox" checkedColor="#94ebcd" layoutX="72.0" layoutY="237.0" text="Utensils" textFill="#f2eded" unCheckedColor="WHITE">
+         <font>
+            <Font name="Overpass Regular" size="20.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="otherCheckBox" checkedColor="#6ddccf" layoutX="72.0" layoutY="287.0" text="Other" textFill="#f2eded" unCheckedColor="WHITE">
+         <font>
+            <Font name="Overpass Regular" size="20.0" />
+         </font>
+      </JFXCheckBox>
+      <Line endX="118.80001831054688" endY="7.62939453125E-6" layoutX="146.0" layoutY="68.0" startX="-110.80001068115234" startY="7.62939453125E-6" stroke="#fcf9f9" />
+      <Line endX="118.80001831054688" endY="7.62939453125E-6" layoutX="145.0" layoutY="343.0" startX="-110.80001068115234" startY="7.62939453125E-6" stroke="#fcf9f9" />
+      <Text fill="#faf6f6" layoutX="35.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+         <font>
+            <Font name="Overpass SemiBold" size="23.0" />
+         </font>
+      </Text>
+      <Line endX="9.79998779296875" layoutX="149.0" layoutY="433.0" startX="-8.20001220703125" stroke="#fcf8f8" />
+      <JFXRadioButton fx:id="priceHighToLowCheckbox" layoutX="53.0" layoutY="476.0" text="Price High - Low" textFill="#f4f1f1">
+         <font>
+            <Font name="Overpass Regular" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="price" />
+         </toggleGroup>
+         <unSelectedColor>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </unSelectedColor>
+         <selectedColor>
+            <Color red="0.8196078538894653" green="0.9176470637321472" blue="0.6392157077789307" />
+         </selectedColor>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="priceLowToHighCheckbox" layoutX="53.0" layoutY="519.0" text="Price  Low - High" textFill="#f4f1f1" toggleGroup="$price">
+         <font>
+            <Font name="Overpass Regular" size="20.0" />
+         </font>
+         <unSelectedColor>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </unSelectedColor>
+         <selectedColor>
+            <Color red="0.8588235378265381" green="0.7764706015586853" blue="0.9215686321258545" />
+         </selectedColor>
+      </JFXRadioButton>
+      <Line endX="118.80001831054688" endY="7.62939453125E-6" layoutX="145.0" layoutY="568.0" startX="-110.80001068115234" startY="7.62939453125E-6" stroke="#fcf9f9" />
+      <Text fill="#faf6f6" layoutX="35.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOP NAME">
+         <font>
+            <Font name="Overpass SemiBold" size="23.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="40.0" layoutY="624.0" prefHeight="44.0" prefWidth="224.0" style="-fx-border-color: white; -fx-border-radius: 2em; -fx-background-radius: 5em;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../marketimages/icons8_Search_52px.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="shopNameTextField" focusTraversable="false" prefHeight="40.0" prefWidth="150.0" promptText="Search" style="-fx-border-color: transperent;" styleClass="text-field-filter" stylesheets="@../../css/style.css">
+               <font>
+                  <Font name="Overpass Light" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <TextField fx:id="lowPriceTextField" focusTraversable="false" layoutX="34.0" layoutY="410.0" prefHeight="42.0" prefWidth="103.0" promptText="Low Price" style="-fx-border-radius: 2em; -fx-border-color: white; -fx-background-radius: 5em;" styleClass="text-field-filter" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Light" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="highPriceTextField" focusTraversable="false" layoutX="163.0" layoutY="410.0" prefHeight="42.0" prefWidth="107.0" promptText="High Price" style="-fx-border-radius: 2em; -fx-border-color: white; -fx-background-radius: 5em;" styleClass="text-field-filter" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Light" size="16.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="162.0" layoutY="735.0" onAction="#handleFilterButton" prefHeight="42.0" prefWidth="132.0" styleClass="button-filter" stylesheets="@../../css/style.css" text="Filter" textFill="#f7f5f5">
+         <font>
+            <Font name="Overpass ExtraBold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6000000238418579" green="0.5777778029441833" blue="0.5777778029441833" />
+               </color>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="6.0" layoutY="735.0" onAction="#handleResetFilterButton" prefHeight="42.0" prefWidth="140.0" styleClass="button-reset-filter" stylesheets="@../../css/style.css" text="Reset Filter" textFill="#f7f5f5">
+         <font>
+            <Font name="Overpass ExtraBold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6000000238418579" green="0.5777778029441833" blue="0.5777778029441833" />
+               </color>
+            </DropShadow>
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

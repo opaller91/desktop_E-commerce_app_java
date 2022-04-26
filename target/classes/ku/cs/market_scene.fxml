@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.MarketSceneController">
+   <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="300.0" direction="RIGHT" resizableOnDrag="true" resizeContent="true" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox layoutY="-17.0" prefHeight="817.0" prefWidth="1315.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-10.0">
+               <children>
+                  <ScrollPane prefHeight="800.0" prefWidth="1315.2" style="-fx-background-color: WHITE;" styleClass="scroll-bar" stylesheets="@../../css/style.css" VBox.vgrow="ALWAYS">
+                     <content>
+                        <GridPane fx:id="marketContainer" prefHeight="0.0" prefWidth="0.0">
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="123.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1315.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.12121222235939721" startX="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color opacity="0.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color opacity="0.27397263050079346" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <HBox alignment="TOP_CENTER" prefHeight="64.0" prefWidth="1315.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton onAction="#handleBackButton" prefHeight="41.0" prefWidth="56.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../marketimages/white-arrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Pane prefHeight="100.0" prefWidth="494.0" />
+                  <Text fill="#fcfafa" strokeType="OUTSIDE" strokeWidth="0.0" text="VALIDMALL" wrappingWidth="255.1611328125">
+                     <font>
+                        <Font name="BodoniFLF-Roman" size="43.0" />
+                     </font>
+                  </Text>
+                  <Pane prefHeight="100.0" prefWidth="542.0">
+                     <children>
+                        <JFXHamburger fx:id="hamburger" layoutX="251.0" layoutY="10.0" styleClass="jfx-hamburger-icon" stylesheets="@../../css/style.css">
+                           <children>
+                              <Text fill="#faf6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter">
+                                 <font>
+                                    <Font name="Overpass SemiBold" size="16.0" />
+                                 </font>
+                              </Text>
+                           </children></JFXHamburger>
+                        <Label fx:id="usernameLabel" layoutX="303.0" layoutY="11.0" prefHeight="26.0" prefWidth="165.0" text="usernameLabel" textFill="#f7f6f6">
+                           <font>
+                              <Font name="Overpass Light" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="userImageView" fitHeight="40.0" fitWidth="40.0" layoutX="467.0" layoutY="3.0" pickOnBounds="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

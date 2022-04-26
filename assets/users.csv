@@ -1,0 +1,7 @@
+fullName,username,phoneNumber,email,password,shopName,isAdmin,isBanned
+Namkhing Hanabi,namkhing,0871672417,namkhingh@gmail.com,12345678,namkhingshop,true,false
+GreenBird,greenbird,0999999999,greenbird@gmail.com,12345678,greenbirdstore,false,false
+Jiratchaya Poolphol,ppinip,0929028905,pinxx@hotmail.com,pin030943,null,false,false
+Ayaka Kamisato,ayaka,0921374518,kamiayaka@gmail.com,Kamisato,ayakashop,false,true
+Rinrada Tirasirichai,opaller,0815558565,opal.rin@hotmail.com,10050805,null,false,false
+Harry Potter,potty,0731674218,realharrypotty@gmail.com,Potterry,null,false,false

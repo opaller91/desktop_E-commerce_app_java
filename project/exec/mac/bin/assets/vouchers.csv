@@ -1,0 +1,13 @@
+voucherType,codename,percent,description,expiryDateStr,c1,c2
+Voucher,voucher,0.05,5% off,02-10-2021 21:23:01
+AmountVoucher,amount,0.05,5% off,02-10-2021 21:23:01,10
+PriceVoucher,price,0.05,5% off,02-10-2021 21:23:01,300.0
+ShopVoucher,shop,0.05,5% off,02-10-2021 21:23:01,namkhingshop
+AmountShopVoucher,amountshop,0.05,5% off,02-10-2021 21:23:01,namkhingshop,8
+PriceShopVoucher,priceshop,0.05,5% off,02-10-2021 21:23:01,namkhingshop,200.0
+ShopVoucher,namkhing10,0.1,10% off everything,15-10-2021 21:59:46,namkhingshop
+AmountVoucher,10per10,0.1,10% off when buying 10 or more items,04-11-2021 22:24:22,10
+PriceShopVoucher,fx0000,0.1,ใช้กับสินค้า electronic,13-10-2021 17:33:39,greenbirdstore,2300.0
+PriceShopVoucher,fx0001,1.0,ลดราคา eletronic แบบ 100%,13-10-2021 17:35:49,greenbirdstore,1200.0
+Voucher,dt1005,0.05,Celebrate the PROJECT!!,06-11-2021 02:02:36
+ShopVoucher,fx202,0.03,FINAL,11-11-2021 05:25:11,namkhingshop

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.CreateShopSceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000002f" height="200.0" layoutX="1047.0" layoutY="134.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="62.0" layoutX="329.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" width="298.0" />
+      <Rectangle fx:id="rectangleFrame" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="695.0" layoutX="329.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="936.0" />
+      <Label layoutX="343.0" layoutY="37.0" text="Create your shop">
+         <font>
+            <Font name="Overpass ExtraBold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="84.0" prefHeight="43.0" prefWidth="224.0" text="Shop Name *" textFill="#252525">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="84.0" prefHeight="43.0" prefWidth="202.0" text="Store type" textFill="#252525">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="177.0" prefHeight="43.0" prefWidth="163.0" text="Address*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="372.0" prefHeight="43.0" prefWidth="266.0" text="Phone Number*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="372.0" prefHeight="43.0" prefWidth="184.0" text="Facebook*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="382.0" prefHeight="43.0" prefWidth="163.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="472.0" prefHeight="43.0" prefWidth="52.0" text="Line*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="277.0" prefHeight="35.0" prefWidth="85.0" text="E-mail*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="472.0" prefHeight="43.0" prefWidth="186.0" text="Instagram*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="562.0" prefHeight="43.0" prefWidth="126.0" text="Bank Name*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="710.0" layoutY="561.0" prefHeight="45.0" prefWidth="306.0" text="Account Number*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="665.0" prefHeight="43.0" prefWidth="281.0" text="Account Name*">
+         <font>
+            <Font name="Overpass ExtraLight" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="shopNameTextField" layoutX="340.0" layoutY="120.0" prefHeight="43.0" prefWidth="266.0" promptText="Enter your shop name" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="shopTypeTextField" layoutX="710.0" layoutY="120.0" prefHeight="43.0" prefWidth="266.0" promptText="Enter store type" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="shopAddressTextField" layoutX="340.0" layoutY="220.0" prefHeight="43.0" prefWidth="636.0" promptText="Enter your address" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="shopEmailTextField" layoutX="340.0" layoutY="312.0" prefHeight="43.0" prefWidth="636.0" promptText="E-mail" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="shopPhoneNumberTextField" layoutX="340.0" layoutY="415.0" prefHeight="43.0" prefWidth="266.0" promptText="Phone Number" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="shopFacebookTextField" layoutX="710.0" layoutY="415.0" prefHeight="43.0" prefWidth="266.0" promptText="Facebook" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="shopInstagramTextField" layoutX="340.0" layoutY="508.0" prefHeight="43.0" prefWidth="266.0" promptText="Instagram" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bankNameTextField" layoutX="338.0" layoutY="599.0" prefHeight="43.0" prefWidth="266.0" promptText="Bank name" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="accountNumberTextField" layoutX="710.0" layoutY="599.0" prefHeight="43.0" prefWidth="266.0" promptText="Account number" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="accountNameTextField" layoutX="340.0" layoutY="708.0" prefHeight="43.0" prefWidth="636.0" promptText="Account name" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="shopLineTextField" layoutX="710.0" layoutY="508.0" prefHeight="43.0" prefWidth="266.0" promptText="Line" styleClass="input" stylesheets="@../../css/style.css">
+         <font>
+            <Font name="Overpass Regular" size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" layoutX="1036.0" layoutY="120.0" pickOnBounds="true" />
+      <JFXButton layoutX="1076.0" layoutY="708.0" onAction="#handleSignUpButton" prefHeight="50.0" prefWidth="119.0" styleClass="home-button" stylesheets="@../../css/style.css" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" onAction="#handleHomeButton" prefHeight="127.0" prefWidth="325.0" styleClass="back_btn" stylesheets="@../../css/style.css" text="VELIDMALL">
+         <font>
+            <Font name="Bodoni 72 Book" size="48.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1059.0" layoutY="347.0" onAction="#handleAddPhoto" prefHeight="50.0" prefWidth="154.0" styleClass="item-button" stylesheets="@../../css/style.css" text="Upload Photo">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

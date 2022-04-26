@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="100.0" prefWidth="1230.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.market.controllers.RatingController">
+   <children>
+      <ImageView fx:id="ratingEffectImageView" fitHeight="100.0" fitWidth="236.0" layoutX="445.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../marketimages/rating.gif" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Ratings &amp; Reviews" wrappingWidth="469.02735900878906">
+         <font>
+            <Font name="Overpass Bold" size="35.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="ratingImageView" fitHeight="36.0" fitWidth="178.0" layoutX="15.0" layoutY="49.0" pickOnBounds="true" />
+      <Label fx:id="ratingLabel" layoutX="219.0" layoutY="43.0" prefHeight="50.0" prefWidth="138.0" text="ratingLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="15.0" layoutY="95.0" opacity="0.63" prefHeight="5.0" prefWidth="1146.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+   </children>
+</AnchorPane>

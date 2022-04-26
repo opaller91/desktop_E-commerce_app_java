@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1315.0" style="-fx-background-color: #DFD7CA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.ShopInfoShopSceneController">
+   <children>
+      <Label fx:id="shopNameLabel" layoutX="263.0" layoutY="220.0" text="shopNameLabel">
+         <font>
+            <Font name="Overpass SemiBold" size="37.0" />
+         </font>
+      </Label>
+      <Text layoutX="368.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="188.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact ">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="381.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E - mail">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="269.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number ">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="349.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facebook">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="337.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instagram">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="428.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Text>
+      <Label fx:id="shopEmailLabel" layoutX="662.0" layoutY="421.0" text="shopEmailLabel">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopPhoneNumberLabel" layoutX="663.0" layoutY="484.0" text="shopPhoneNumberLabel">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopFacebookLabel" layoutX="663.0" layoutY="549.0" text="shopFacebookLabel">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopInstagramLabel" layoutX="664.0" layoutY="613.0" text="shopInstagramLabel">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopLineLabel" layoutX="668.0" layoutY="679.0" text="shopLineLabel">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="shopImage" fitHeight="164.0" fitWidth="170.0" layoutX="62.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton focusTraversable="false" layoutX="68.0" layoutY="88.0" onAction="#handleHomeButton" prefHeight="46.0" prefWidth="105.0" styleClass="item-button" stylesheets="@../../css/style.css" text="HOME">
+         <font>
+            <Font name="Overpass SemiBold" size="21.0" />
+         </font>
+      </JFXButton>
+      <Line endX="834.0806884765625" endY="-1.52587890625E-5" layoutX="413.0" layoutY="76.0" startX="-380.79058837890625" startY="-7.62939453125E-6" strokeWidth="3.0" />
+      <Line endX="834.0806884765625" endY="-1.52587890625E-5" layoutX="416.0" layoutY="144.0" startX="-380.79058837890625" startY="-7.62939453125E-6" strokeWidth="3.0" />
+      <JFXButton focusTraversable="false" layoutX="1069.0" layoutY="84.0" onAction="#handleVouchersButton" prefHeight="46.0" prefWidth="168.0" styleClass="item-button" stylesheets="@../../css/style.css" text="VOUCHERS">
+         <font>
+            <Font name="Overpass SemiBold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton focusTraversable="false" layoutX="896.0" layoutY="85.0" onAction="#handleOrderListButton" prefHeight="46.0" prefWidth="154.0" styleClass="item-button" stylesheets="@../../css/style.css" text="ORDER LIST">
+         <font>
+            <Font name="Overpass SemiBold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton focusTraversable="false" layoutX="766.0" layoutY="87.0" onAction="#handleItemsButton" prefHeight="46.0" prefWidth="105.0" styleClass="item-button" stylesheets="@../../css/style.css" text="ITEM">
+         <font>
+            <Font name="Overpass SemiBold" size="21.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="484.0" layoutY="56.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="VALIDMALL">
+         <font>
+            <Font name="BodoniFLF-Roman" size="53.0" />
+         </font>
+      </Text>
+      <Line endX="834.0806884765625" endY="-1.52587890625E-5" layoutX="426.0" layoutY="759.0" startX="-380.79058837890625" startY="-7.62939453125E-6" strokeWidth="3.0" />
+      <JFXTextArea fx:id="addressLabel" focusColor="#dfd7ca" layoutX="665.0" layoutY="307.0" prefHeight="73.0" prefWidth="399.0" unFocusColor="#dfd7ca">
+         <font>
+            <Font name="Overpass SemiBold" size="35.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

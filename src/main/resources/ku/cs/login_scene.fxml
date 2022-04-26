@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stack" prefHeight="800.0" prefWidth="1315.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.LoginSceneController">
+   <children>
+      <AnchorPane fx:id="layerSignUp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="766.0" style="-fx-background-color: white;" StackPane.alignment="CENTER_RIGHT">
+         <children>
+            <AnchorPane fx:id="layer1" layoutX="3.0" layoutY="1.0" prefHeight="800.0" prefWidth="766.0">
+               <children>
+                  <Label fx:id="signInTo" layoutX="212.0" layoutY="94.0" text="VALIDMALL">
+                     <font>
+                        <Font name="BodoniFLF-Roman" size="68.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="loginLine" endX="427.44482421875" layoutX="285.0" layoutY="189.0" startX="-203.83770751953125" strokeWidth="3.0" />
+                  <Label fx:id="usernameLabel" layoutX="135.0" layoutY="242.0" text="Username">
+                     <font>
+                        <Font name="Overpass Regular" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passwordLabel" layoutX="138.0" layoutY="347.0" text="Password">
+                     <font>
+                        <Font name="Overpass Regular" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField" focusTraversable="false" layoutX="192.0" layoutY="282.0" onAction="#handleLogin" prefHeight="41.0" prefWidth="457.0" promptText="Username" styleClass="input" stylesheets="@../../css/style.css">
+                     <font>
+                        <Font name="Overpass Regular" size="23.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="btnSignIn" layoutX="217.0" layoutY="506.0" onAction="#handleLogin" prefHeight="53.0" prefWidth="142.0" styleClass="login-button" stylesheets="@../../css/style.css" text="SIGN IN" textFill="WHITE">
+                     <font>
+                        <Font name="Overpass ExtraBold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCredit" layoutX="622.0" layoutY="745.0" onAction="#handleCreditButton" prefHeight="42.0" prefWidth="117.0" styleClass="login-button" stylesheets="@../../css/style.css" text="CREDIT" textFill="WHITE">
+                     <font>
+                        <Font name="Overpass ExtraBold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <PasswordField fx:id="passwordTextField" focusTraversable="false" layoutX="192.0" layoutY="409.0" onAction="#handleLogin" prefHeight="41.0" prefWidth="457.0" promptText="Password" styleClass="input" stylesheets="@../../css/style.css">
+                     <font>
+                        <Font name="Overpass Regular" size="23.0" />
+                     </font>
+                  </PasswordField>
+                  <JFXButton fx:id="btnAdmin" layoutX="455.0" layoutY="506.0" onAction="#handleLoginAdmin" prefHeight="53.0" prefWidth="142.0" styleClass="login-button" stylesheets="@../../css/style.css" text="ADMIN" textFill="WHITE">
+                     <font>
+                        <Font name="Overpass ExtraBold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="createAccount" layoutX="193.0" layoutY="19.0" text="Create Account">
+                     <font>
+                        <Font name="Overpass SemiBold" size="58.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="createLine" endX="427.44482421875" layoutX="285.0" layoutY="97.0" startX="-203.83770751953125" strokeWidth="3.0" />
+                  <ImageView fx:id="imageView" fitHeight="152.0" fitWidth="219.0" layoutX="260.0" layoutY="111.0" pickOnBounds="true" />
+                  <JFXButton fx:id="btnAddPhoto" layoutX="504.0" layoutY="228.0" onAction="#handleAddPhoto" prefHeight="33.0" prefWidth="126.0" styleClass="login-button" stylesheets="@../../css/style.css" text="ADD PROFILE IMAGE" textFill="WHITE">
+                     <font>
+                        <Font name="Overpass ExtraBold" size="11.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="userNotFoundLabel" layoutX="535.0" layoutY="334.0" text="User not found" textFill="#ee2323">
+                     <font>
+                        <Font name="Overpass Regular" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="wrongPasswordLabel" layoutX="524.0" layoutY="460.0" text="Wrong password" textFill="#ee2323">
+                     <font>
+                        <Font name="Overpass Regular" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="noUsernameLabel" layoutX="471.0" layoutY="334.0" text="Please Enter Username" textFill="#ee2323">
+                     <font>
+                        <Font name="Overpass Regular" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="noPassword" layoutX="476.0" layoutY="460.0" text="Please Enter Password" textFill="#ee2323">
+                     <font>
+                        <Font name="Overpass Regular" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fullNameTextField" focusTraversable="false" layoutX="135.0" layoutY="282.0" prefHeight="41.0" prefWidth="498.0" promptText="Enter your name" styleClass="input" stylesheets="@../../css/style.css">
+                     <font>
+                        <Font name="Overpass Regular" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="name" layoutX="135.0" layoutY="262.0" text="Name">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username" layoutX="135.0" layoutY="332.0" text="Username">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userNameTextField" focusTraversable="false" layoutX="135.0" layoutY="351.0" prefHeight="41.0" prefWidth="498.0" promptText="Enter your username" styleClass="input" stylesheets="@../../css/style.css">
+                     <font>
+                        <Font name="Overpass Regular" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="phoneNumber" layoutX="135.0" layoutY="401.0" text="Phone Number">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phoneNumberTextField" focusTraversable="false" layoutX="135.0" layoutY="420.0" prefHeight="41.0" prefWidth="498.0" promptText="Enter your phone number" styleClass="input" stylesheets="@../../css/style.css">
+                     <font>
+                        <Font name="Overpass Regular" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="email" layoutX="135.0" layoutY="470.0" text="E-mail">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailTextField" focusTraversable="false" layoutX="135.0" layoutY="489.0" prefHeight="41.0" prefWidth="498.0" promptText="Enter your e-mail" styleClass="input" stylesheets="@../../css/style.css">
+                     <font>
+                        <Font name="Overpass Regular" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="createPassword" layoutX="135.0" layoutY="539.0" text="Create a Password">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="confirmPassword" layoutX="135.0" layoutY="608.0" text="Comfirm Password">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnSignUp" layoutX="327.0" layoutY="703.0" onAction="#handleSignUpButton" prefHeight="53.0" prefWidth="142.0" styleClass="login-button" stylesheets="@../../css/style.css" text="SIGN UP" textFill="WHITE">
+                     <font>
+                        <Font name="Overpass ExtraBold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="at1" layoutX="184.0" layoutY="262.0" text="*">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="at2" layoutX="218.0" layoutY="331.0" text="*">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="at3" layoutX="257.0" layoutY="400.0" text="*">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="at4" layoutX="188.0" layoutY="469.0" text="*">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="at5" layoutX="286.0" layoutY="536.0" text="*">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="at6" layoutX="287.0" layoutY="607.0" text="*">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="passwordCheckLabel" layoutX="461.0" layoutY="670.0" text="passwordCheckLabel" textFill="#ee2323">
+                     <font>
+                        <Font name="Overpass Regular" size="17.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordField" focusTraversable="false" layoutX="135.0" layoutY="558.0" prefHeight="41.0" prefWidth="498.0" promptText="Enter your password" styleClass="input" stylesheets="@../../css/style.css">
+                     <font>
+                        <Font name="Overpass Regular" size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="confirmPasswordField" focusTraversable="false" layoutX="135.0" layoutY="627.0" prefHeight="41.0" prefWidth="498.0" promptText="Confirm password" styleClass="input" stylesheets="@../../css/style.css">
+                     <font>
+                        <Font name="Overpass Regular" size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="passwordUse" layoutX="298.0" layoutY="539.0" text="(Use 8 or more charecters)">
+                     <font>
+                        <Font name="Overpass Regular" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="layer2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="549.0" style="-fx-background-color: #FF8364#FF8364;" StackPane.alignment="CENTER_LEFT">
+         <children>
+            <AnchorPane fx:id="show" layoutX="176.0" layoutY="116.0" prefHeight="800.0" prefWidth="549.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label fx:id="personalLabel" layoutX="45.0" layoutY="356.0" text="personal shopping experience" textFill="WHITE" AnchorPane.rightAnchor="152.0" AnchorPane.topAnchor="356.0">
+               <font>
+                  <Font name="Overpass SemiBold" size="26.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="signUp" layoutX="158.0" layoutY="510.0" onAction="#handleSwitchToSignUp" prefHeight="54.0" prefWidth="219.0" styleClass="login-slide-button" stylesheets="@../../css/style.css" text="SIGN UP" AnchorPane.rightAnchor="172.0" AnchorPane.topAnchor="510.0">
+               <font>
+                  <Font name="Overpass ExtraBold" size="41.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="createLabel" layoutX="42.0" layoutY="296.0" text="Create an account and benefit from a more" textFill="WHITE" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="296.0">
+               <font>
+                  <Font name="Overpass SemiBold" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="dnHaveLabel" layoutX="16.0" layoutY="59.0" text="Don't have" textFill="WHITE" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="59.0">
+               <font>
+                  <Font name="Overpass SemiBold" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="accountLabel" layoutX="125.0" layoutY="126.0" text="an account ?" textFill="WHITE" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="126.0">
+               <font>
+                  <Font name="Overpass SemiBold" size="64.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="signIn" layoutX="156.0" layoutY="510.0" onAction="#handleSwitchToSignIn" prefHeight="82.0" prefWidth="219.0" styleClass="login-slide-button" stylesheets="@../../css/style.css" text="SIGN IN">
+               <font>
+                  <Font name="Overpass ExtraBold" size="41.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="welcomeLabel" layoutX="35.0" layoutY="130.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="Overpass SemiBold" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="backLabel" layoutX="39.0" layoutY="208.0" text="Back !" textFill="WHITE">
+               <font>
+                  <Font name="Overpass SemiBold" size="56.0" />
+               </font>
+            </Label>
+            <Label fx:id="enjoyLabel" layoutX="42.0" layoutY="348.0" text="Enjoy your shopping experience" textFill="WHITE" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="348.0">
+               <font>
+                  <Font name="Overpass SemiBold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="readyLabel" layoutX="43.0" layoutY="301.0" text="ARE YOU READY ?" textFill="WHITE" AnchorPane.rightAnchor="247.0" AnchorPane.topAnchor="301.0">
+               <font>
+                  <Font name="Overpass SemiBold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

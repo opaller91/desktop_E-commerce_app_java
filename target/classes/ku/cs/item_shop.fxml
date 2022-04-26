@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="box" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#mouseEntered" prefHeight="369.0" prefWidth="244.0" spacing="5.0" style="-fx-background-radius: 10;" styleClass="shadow-primary" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.market.controllers.ItemShopController">
+   <children>
+      <ImageView fx:id="itemImageView" fitHeight="277.0" fitWidth="219.0" pickOnBounds="true" />
+      <Label fx:id="itemNameLabel" text="itemNameLabel" textFill="WHITE">
+         <font>
+            <Font name="Overpass Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemPriceLabel" text="itemPriceLabel" textFill="WHITE">
+         <font>
+            <Font name="Overpass Light" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ratingImageView" fitHeight="34.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1450.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.market.controllers.ItemInfoController">
+   <children>
+      <ImageView fx:id="itemImageView" fitHeight="674.0" fitWidth="495.0" layoutX="93.0" layoutY="104.0" pickOnBounds="true" />
+      <Label fx:id="itemNameLabel" layoutX="641.0" layoutY="122.0" text="itemNameLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="35.0" />
+         </font>
+      </Label>
+      <Line endX="409.4000244140625" layoutX="741.0" layoutY="181.0" startX="-100.0" strokeWidth="5.0" />
+      <Label fx:id="itemPriceLabel" layoutX="642.0" layoutY="208.0" text="itemPriceLabel">
+         <font>
+            <Font name="Overpass Bold" size="28.0" />
+         </font>
+      </Label>
+      <Text layoutX="642.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prices include all applicable taxes or shipping cost">
+         <font>
+            <Font name="Overpass Light" size="19.0" />
+         </font>
+      </Text>
+      <Separator layoutX="643.0" layoutY="316.0" prefHeight="5.0" prefWidth="507.0" />
+      <Text layoutX="642.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPTION">
+         <font>
+            <Font name="Overpass SemiBold" size="22.0" />
+         </font>
+      </Text>
+      <JFXTextArea fx:id="itemDetailTextArea" editable="false" focusColor="WHITE" focusTraversable="false" layoutX="643.0" layoutY="384.0" prefHeight="186.0" prefWidth="507.0" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextArea>
+      <Separator layoutX="643.0" layoutY="589.0" prefHeight="2.0" prefWidth="507.0" />
+      <Label fx:id="itemStockLabel" layoutX="642.0" layoutY="615.0" text="itemStockLabel">
+         <font>
+            <Font name="Overpass Bold" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="buyNowButton" alignment="CENTER" buttonType="RAISED" layoutX="638.0" layoutY="704.0" onAction="#handleBuyNowButton" prefHeight="74.0" prefWidth="546.0" styleClass="button-buy" stylesheets="@../../css/style.css" text="BUY NOW" textFill="#f7f0f0">
+         <font>
+            <Font name="Overpass Black" size="21.0" />
+         </font>
+      </JFXButton>
+      <Line fx:id="lineBtn" endX="52.199951171875" layoutX="911.0" layoutY="766.0" startX="-51.0" stroke="#faf5f5" strokeWidth="2.0" visible="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="251.0" layoutY="846.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.07575750350952148">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.9246575236320496" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="shopImageView" fitHeight="178.0" fitWidth="178.0" layoutX="368.0" layoutY="1177.0" onMouseClicked="#handleShopLabel" pickOnBounds="true" />
+      <Label fx:id="shopNameLabel" layoutX="567.0" layoutY="1222.0" onMouseClicked="#handleShopLabel" onMouseEntered="#handleShopLabelMouseEnter" onMouseExited="#handleShopLabelMouseExit" text="shopNameLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="58.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="105.0" layoutX="646.0" layoutY="943.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../marketimages/purchase-order-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="202.0" layoutY="933.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../marketimages/free-shipping-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="105.0" layoutX="1004.0" layoutY="947.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../marketimages/redeem-icon.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="193.0" layoutY="1077.0" strokeType="OUTSIDE" strokeWidth="0.0" text="free shipping">
+         <font>
+            <Font name="Overpass Light" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="496.0" layoutY="1076.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pay online anywhere, 24 hours a day">
+         <font>
+            <Font name="Overpass Light" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="972.0" layoutY="1074.0" strokeType="OUTSIDE" strokeWidth="0.0" text="enjoy discounts" wrappingWidth="177.89605712890625">
+         <font>
+            <Font name="Overpass Light" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="968.0" layoutY="1106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with promo code" wrappingWidth="177.89605712890625">
+         <font>
+            <Font name="Overpass Light" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="194.0" layoutY="1111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="on all orders">
+         <font>
+            <Font name="Overpass Light" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="clickShopDetailLabel" layoutX="572.0" layoutY="1292.0" onMouseClicked="#handleShopLabel" onMouseEntered="#handleShopLabelMouseEnter" onMouseExited="#handleShopLabelMouseExit" text="VIEW SHOP DETAILS  CLICK HERE!">
+         <font>
+            <Font name="Overpass ExtraLight" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1074.0" layoutY="84.0" onAction="#handleReportItemButton" styleClass="button-report" stylesheets="@../../css/style.css" text="Report this product" textFill="#cf0b0b">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../marketimages/exclamation-mark.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

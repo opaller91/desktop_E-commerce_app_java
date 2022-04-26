@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="800.0" prefWidth="1315.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.UserSettingSceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000006f" height="263.0" layoutX="192.0" layoutY="267.0" stroke="#00000089" strokeType="INSIDE" width="451.0" />
+      <Text fill="WHITE" layoutX="494.0" layoutY="87.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="VALIDMALL">
+         <font>
+            <Font name="BodoniFLF-Roman" size="53.0" />
+         </font>
+      </Text>
+      <Line endX="316.6260986328125" endY="218.40774536132812" layoutX="785.0" layoutY="215.0" startX="429.2359619140625" startY="218.40774536132812" stroke="WHITE" strokeWidth="4.0" />
+      <Text fill="WHITE" layoutX="952.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR / AND">
+         <font>
+            <Font name="Overpass SemiBold" size="31.0" />
+         </font>
+      </Text>
+      <Line endX="53.23760986328125" endY="-43.2054443359375" layoutX="792.0" layoutY="480.0" startX="148.668212890625" startY="-43.2054443359375" stroke="WHITE" strokeWidth="4.0" />
+      <Text fill="#0000003d" layoutX="759.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHANGE PROFILE PICTURE">
+         <font>
+            <Font name="Overpass ExtraBold" size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="763.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHANGE PROFILE PICTURE">
+         <font>
+            <Font name="Overpass ExtraBold" size="33.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000006f" height="235.0" layoutX="780.0" layoutY="521.0" stroke="#00000089" strokeType="INSIDE" width="509.0" />
+      <Text fill="#00000023" layoutX="763.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHANGE PASSWORD">
+         <font>
+            <Font name="Overpass ExtraBold" size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="768.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHANGE PASSWORD">
+         <font>
+            <Font name="Overpass ExtraBold" size="33.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="895.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fill="#0000002b" layoutX="188.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER INFORMATION">
+         <font>
+            <Font name="Overpass ExtraBold" size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="191.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER INFORMATION">
+         <font>
+            <Font name="Overpass ExtraBold" size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="216.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FULL NAME ">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fullNameTextField" editable="false" layoutX="367.0" layoutY="284.0" prefHeight="26.0" prefWidth="254.0" styleClass="input-setting" stylesheets="@../../css/style.css" text="fullNameTextField" />
+      <Text fill="WHITE" layoutX="216.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameTextField" editable="false" layoutX="369.0" layoutY="334.0" prefHeight="26.0" prefWidth="254.0" styleClass="input-setting" stylesheets="@../../css/style.css" text="usernameTextFirld" />
+      <Text fill="WHITE" layoutX="216.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NUMBER">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="phoneNumberTextField" editable="false" layoutX="369.0" layoutY="377.0" prefHeight="26.0" prefWidth="254.0" styleClass="input-setting" stylesheets="@../../css/style.css" text="phoneNumberTextField" />
+      <Text fill="WHITE" layoutX="218.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailTextField" editable="false" layoutX="369.0" layoutY="428.0" prefHeight="26.0" prefWidth="254.0" styleClass="input-setting" stylesheets="@../../css/style.css" text="emailTextField" />
+      <JFXButton layoutX="1092.0" layoutY="372.0" onAction="#handleChangePicture" prefHeight="32.0" prefWidth="131.0" styleClass="home-button" stylesheets="@../../css/style.css" text="CHANGE PICTURE" />
+      <Label fx:id="pictureChangedLabel" layoutX="1173.0" layoutY="407.0" text="pictureChangeLabel" />
+      <Text fill="WHITE" layoutX="805.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CURRENT PASSWORD">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="805.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW PASSWORD">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="805.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONFIRM PASSWORD">
+         <font>
+            <Font name="Overpass Regular" size="18.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="currentPasswordPasswordField" layoutX="1026.0" layoutY="559.0" prefHeight="26.0" prefWidth="249.0" promptText="Enter Current Password" styleClass="input-setting" stylesheets="@../../css/style.css" />
+      <PasswordField fx:id="newPasswordPasswordField" layoutX="1027.0" layoutY="614.0" prefHeight="26.0" prefWidth="250.0" promptText="Enter New Password" styleClass="input-setting" stylesheets="@../../css/style.css" />
+      <PasswordField fx:id="confirmPasswordPasswordField" layoutX="1026.0" layoutY="676.0" prefHeight="26.0" prefWidth="251.0" promptText="Confirm Password" styleClass="input-setting" stylesheets="@../../css/style.css" />
+      <JFXButton layoutX="787.0" layoutY="716.0" onAction="#handleChangePassword" prefHeight="32.0" prefWidth="147.0" styleClass="home-button" stylesheets="@../../css/style.css" text="CHANGE PASSWORD" />
+      <Label fx:id="passwordChangedLabel" layoutX="1122.0" layoutY="711.0" text="passwordChangeLabel" />
+      <Button layoutX="28.0" layoutY="39.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="53.0" prefWidth="87.0" style="-fx-background-color: transparent;" textFill="TRANSPARENT">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../userimages/left-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

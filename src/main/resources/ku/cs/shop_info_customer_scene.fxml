@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1315.0" style="-fx-background-color: #F2E8DE;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.ShopInfoCustomerSceneController">
+   <children>
+      <Text layoutX="99.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VALIDMALL">
+         <font>
+            <Font name="BodoniFLF-Roman" size="41.0" />
+         </font>
+      </Text>
+      <JFXButton focusTraversable="false" layoutX="10.0" layoutY="16.0" onAction="#handleBackButton" text=" ">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../marketimages/black-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label fx:id="shopNameLabel" layoutX="550.0" layoutY="117.0" text="shopNameLabel">
+         <font>
+            <Font name="Overpass ExtraBold" size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="549.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Overpass Regular" size="21.0" />
+         </font>
+      </Text>
+      <JFXTextArea fx:id="addressTextArea" editable="false" focusColor="#ffffff00" focusTraversable="false" layoutX="654.0" layoutY="146.0" prefHeight="75.0" prefWidth="473.0" unFocusColor="#ffffff00">
+         <font>
+            <Font name="Overpass Light" size="21.0" />
+         </font>
+      </JFXTextArea>
+      <Text layoutX="549.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+         <font>
+            <Font name="Overpass Regular" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="659.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+         <font>
+            <Font name="Overpass Regular" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="659.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font name="Overpass Regular" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="659.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facebook">
+         <font>
+            <Font name="Overpass Regular" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="659.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instagram">
+         <font>
+            <Font name="Overpass Regular" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="659.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line" wrappingWidth="73.36000061035156">
+         <font>
+            <Font name="Overpass Regular" size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="emailLabel" layoutX="846.0" layoutY="237.0" prefHeight="27.0" prefWidth="323.0" text="emailLabel">
+         <font>
+            <Font name="Overpass Light" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumberLabel" layoutX="846.0" layoutY="267.0" prefHeight="27.0" prefWidth="360.0" text="phoneNumberLabel">
+         <font>
+            <Font name="Overpass Light" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="facebookLabel" layoutX="845.0" layoutY="319.0" prefHeight="27.0" prefWidth="323.0" text="facebookLabel">
+         <font>
+            <Font name="Overpass Light" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="instagramLabel" layoutX="846.0" layoutY="293.0" prefHeight="27.0" prefWidth="340.0" text="instagramLabel">
+         <font>
+            <Font name="Overpass Light" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="121.0" text="Shop Details">
+         <font>
+            <Font name="Overpass Regular" size="22.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="111.79999999999995" layoutY="376.0" prefHeight="407.0" prefWidth="1203.0" style="-fx-background-color: transparent;" stylesheets="@../../css/style.css" AnchorPane.rightAnchor="0.0">
+         <content>
+            <HBox fx:id="productBox" prefHeight="0.0" prefWidth="0.0" spacing="20.0" />
+         </content>
+         <styleClass>
+            <String fx:value="scroll-bar" />
+            <String fx:value="scroll-pane" />
+         </styleClass>
+      </ScrollPane>
+      <ImageView fx:id="userImageView" fitHeight="40.0" fitWidth="40.0" layoutX="1264.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="usernameLabel" layoutX="1101.0" layoutY="12.0" text="usernameLabel">
+         <font>
+            <Font name="Overpass Light" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lineIDLabel" layoutX="844.0" layoutY="345.0" prefHeight="27.0" prefWidth="323.0" text="lineIDLabel">
+         <font>
+            <Font name="Overpass Light" size="21.0" />
+         </font>
+      </Label>
+      <Text layoutX="115.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Product">
+         <font>
+            <Font name="Overpass Light" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

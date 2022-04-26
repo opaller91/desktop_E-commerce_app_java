@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane fx:id="stackPane" prefHeight="800.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.LoginSliderShowController">
+   <children>
+      <AnchorPane fx:id="backPane" prefHeight="800.0" prefWidth="457.0" />
+      <AnchorPane fx:id="frontPane" prefHeight="800.0" prefWidth="457.0">
+
+</AnchorPane>
+   </children>
+</StackPane>

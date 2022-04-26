@@ -1,0 +1,11 @@
+itemID,shopName,itemName,itemDescription,itemType,itemPrice,itemStock,StockWarning,isBanned
+4,namkhingshop,Harry Potter Book,Harry Potter Book (Prisoner of Azkaban),Other,250.0,1,3,false
+2,namkhingshop,iPhone 13,iPhone 13 black color,Electronics,25000.0,0,2,false
+3,namkhingshop,Coffee Cup,Shawn Mendes collab Tim Hortons,Utensils,500.0,11,3,false
+7,namkhingshop,Army Bomb Stick,Army Bomb 2020 from BTS,Other,1350.0,61,10,false
+5,ayakashop,braincells,me dumb,Other,100.0,61,5,false
+1,namkhingshop,Cartoon T-Shirt,Care Bear  T-Shirt Size M,Clothing,300.0,7,3,false
+8,ayakashop,SWCon Stonks,Roses are red\[comma]\[newline]Java bit by bit.\[newline]Buy this stock\[comma]\[newline]and you'll get \[doublequote]rich\[doublequote].\[newline]...maybe?,Other,99.0,5007,100,false
+6,namkhingshop,One direction Concert Ticket !,One Direction Comeback Concert 2022,Other,5500.0,4,1,false
+9,greenbirdstore,Arrow Stickers,Stickers for your car AND more!,Other,10.0,1000,10,false
+10,greenbirdstore,Cat in a Coffee,แมวกับกาแฟ แมวในกาแฟ ยอดขายดีอันดับล้าน,Other,1599.0,10,3,false

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#mouseEntered" prefHeight="230.0" prefWidth="350.0" style="-fx-background-color: transparent;" styleClass="shadow" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.market.controllers.VoucherController">
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+   <children>
+      <AnchorPane prefHeight="230.0" prefWidth="350.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fitHeight="230.0" fitWidth="350.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.451528930664068" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.39999999999997726" AnchorPane.topAnchor="33.0">
+               <image>
+                  <Image url="@../../marketimages/voucher-market.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="codeNameLabel" layoutX="37.0" layoutY="100.0" prefHeight="43.0" prefWidth="219.0" text="codenameLabel">
+               <font>
+                  <Font name="Overpass Black" size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.05681818181818182" endY="1.0" startX="0.8712120634136777" startY="0.1590909379901308">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9578947424888611" green="0.4150877296924591" blue="0.9398011565208435" opacity="0.8999999761581421" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.12662768363952637" green="0.26548147201538086" blue="0.5894736647605896" opacity="0.9200000166893005" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="percentLabel" layoutX="84.0" layoutY="35.0" prefHeight="70.0" prefWidth="194.0" text="percentLabel">
+               <font>
+                  <Font name="Overpass Black" size="54.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.20000000298023224" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007680491551459294">
+                           <color>
+                              <Color red="1.0" green="0.20000000298023224" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9277011156082153" green="0.800000011920929" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="voucherDetailLabel" layoutX="29.0" layoutY="153.0" prefHeight="30.0" prefWidth="227.0" text="voucherDetailLabel">
+               <font>
+                  <Font name="Overpass Regular" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.821052610874176" green="0.05169590562582016" blue="0.5004873275756836" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9599999785423279" green="0.6607999801635742" blue="0.14399999380111694" opacity="0.9520547986030579" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

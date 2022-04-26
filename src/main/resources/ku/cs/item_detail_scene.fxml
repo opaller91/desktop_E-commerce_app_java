@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.ItemDetailSceneController">
+   <children>
+      <ScrollPane layoutX="-34.0" layoutY="-44.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="scroll-bar" stylesheets="@../../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-30.0">
+         <content>
+            <GridPane fx:id="itemInfoContainer">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Separator opacity="0.6" prefHeight="0.0" prefWidth="1298.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+      <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="1315.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <JFXButton onAction="#handleBackButton" prefHeight="41.0" prefWidth="56.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../marketimages/black-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Pane prefHeight="100.0" prefWidth="494.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VALIDMALL" wrappingWidth="248.7611083984375">
+               <font>
+                  <Font name="BodoniFLF-Roman" size="43.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="100.0" prefWidth="542.0">
+               <children>
+                  <Label fx:id="usernameLabel" layoutX="303.0" layoutY="11.0" prefHeight="26.0" prefWidth="165.0" text="usernameLabel">
+                     <font>
+                        <Font name="Overpass Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="userImageView" fitHeight="40.0" fitWidth="40.0" layoutX="467.0" layoutY="3.0" pickOnBounds="true" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

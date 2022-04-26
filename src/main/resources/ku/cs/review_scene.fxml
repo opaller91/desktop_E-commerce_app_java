@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="800.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.ReviewSceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="426.0" layoutX="-24.0" stroke="BLACK" strokeType="INSIDE" width="1315.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f5f2" height="579.0" layoutX="112.0" layoutY="229.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="651.0" AnchorPane.bottomAnchor="1.0" />
+      <Line endX="486.60003662109375" layoutX="242.0" layoutY="306.0" startX="-100.0" />
+      <Text layoutX="141.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ratings &amp; Reviews">
+         <font>
+            <Font name="Overpass Light" size="34.0" />
+         </font>
+      </Text>
+      <Line endX="486.60003662109375" layoutX="242.0" layoutY="312.0" startX="-100.0" />
+      <Text layoutX="143.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO:">
+         <font>
+            <Font name="Overpass Bold" size="21.0" />
+         </font>
+      </Text>
+      <Line endX="486.60003662109375" layoutX="244.0" layoutY="381.0" startX="-100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f5f2" height="279.0" layoutX="143.0" layoutY="441.0" stroke="BLACK" strokeType="INSIDE" width="588.0" />
+      <Text layoutX="141.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RATING">
+         <font>
+            <Font name="Overpass Bold" size="19.0" />
+         </font>
+      </Text>
+      <JFXSlider fx:id="ratingSlider" blockIncrement="1.0" layoutX="223.0" layoutY="750.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" prefHeight="38.0" prefWidth="394.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0" />
+      <Label fx:id="itemNameLabel" layoutX="196.0" layoutY="350.0" text="itemNameLable">
+         <font>
+            <Font name="Overpass Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="commentTextArea" focusColor="#9eb6ff" layoutX="148.0" layoutY="445.0" prefHeight="273.0" prefWidth="578.0">
+         <font>
+            <Font name="Overpass Regular" size="21.0" />
+         </font>
+      </JFXTextArea>
+      <Label fx:id="ratingLabel" layoutX="631.0" layoutY="738.0" text="ratingLabel" textFill="#3da46f">
+         <font>
+            <Font name="Overpass Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="itemImageView" fitHeight="453.0" fitWidth="344.0" layoutX="870.0" layoutY="218.0" pickOnBounds="true" />
+      <HBox alignment="TOP_CENTER" layoutY="7.0" prefHeight="47.0" prefWidth="1315.0">
+         <children>
+            <Pane prefHeight="47.0" prefWidth="561.0" />
+            <Text fill="#f7f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="VALIDMALL" wrappingWidth="245.02789282798767">
+               <font>
+                  <Font name="BodoniFLF-Roman" size="43.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="100.0" prefWidth="542.0">
+               <children>
+                  <Label fx:id="usernameLabel" layoutX="303.0" layoutY="11.0" prefHeight="26.0" prefWidth="165.0" text="usernameLabel" textFill="WHITE">
+                     <font>
+                        <Font name="Overpass Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="userImageView" fitHeight="40.0" fitWidth="40.0" layoutX="467.0" layoutY="3.0" pickOnBounds="true" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Separator layoutX="-1.0" layoutY="64.0" opacity="0.8" prefHeight="11.0" prefWidth="1319.0" />
+      <JFXButton buttonType="RAISED" layoutX="867.0" layoutY="707.0" onAction="#handleAddReviewButton" prefHeight="64.0" prefWidth="350.0" styleClass="button-review" stylesheets="@../../css/style.css" text="ADD REVIEW">
+         <font>
+            <Font name="Overpass SemiBold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1101.0" layoutY="89.0" onAction="#handleExitButton" prefHeight="64.0" prefWidth="193.0" styleClass="button-exit-review" stylesheets="@../../css/style.css" text="EXIT">
+         <font>
+            <Font name="Overpass SemiBold" size="26.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
